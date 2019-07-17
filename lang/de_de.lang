@@ -1,0 +1,56 @@
+xcore_title = X-Core
+
+xcore_main = Hauptseite
+xcore_main_title = X-Core für REDAXO
+xcore_main_content = Inhalt
+xcore_rexx_api = rexx API
+xcore_code_snippets = Code Snippets
+xcore_code_snippets_boilerplate = rexx Boilerplate
+xcore_code_snippets_frontend_form = Frontend Form
+xcore_code_snippets_resource_includer = Resource Handling
+xcore_code_snippets_multi_slice = Multi Slice Module
+xcore_setup = Setup
+xcore_setup_step1 = Setup Schritt 1
+xcore_setup_step2 = Setup Schritt 2
+xcore_setup_step3 = Setup Schritt 3
+xcore_setup_msg1 = 1) Einstellungen vornehmen
+xcore_setup_msg2 = 2) .htaccess kopieren
+xcore_setup_msg3 = 3) Template anpassen
+xcore_setup_msg1_desc1 = Überprüfen Sie die <a href="index.php?page=xcore/config">Einstellungen</a> dieses Addons und passen diese ggf. an.
+xcore_setup_msg1_desc2 = Achten Sie darauf dass unter <a href="index.php?page=system/lang">System > Sprachen</a> die Sprach-Codes richtig eingegeben sind.
+xcore_setup_msg1_desc3 = Stellen Sie bitte sicher dass unter <a href="index.php?page=yrewrite/domains">yRewrite > Domaineinstellungen</a> und unter <a href="index.php?page=system/settings">System > Einstellungen</a> die selben Werte wie Url, Fehlerartikel etc. gesetzt sind (wenn dort Domains eingestellt sind).
+xcore_setup_msg2_desc1 = Bitte die mitgelieferte <code>/xcore/install/_htaccess</code> in das root Verzeichnis dieser Website kopieren und dort in <code>.htaccess</code> umbenennen.
+xcore_setup_msg2_desc2 = Wenn Sie einen <strong>500 Serverfehler</strong> bekommen entfernen Sie die Zeile <code>Options -Indexes</code>.
+xcore_setup_msg3_desc = Benutzen Sie die <a href="index.php?page=xcore/rexx_api">rexx API</a> und passen Sie Ihre Templates dementsprechend  an.
+xcore_config = Einstellungen
+xcore_rexx_class = rexx Klasse
+
+xcore_help = Hilfe
+xcore_help_readme = Readme
+xcore_help_changelog = Changelog
+xcore_help_license = Lizenz
+
+xcore_offline_404_frontend_msg1 = Offline Artikel
+xcore_offline_404_frontend_msg2 = (nur für eingeloggte Benutzer sichtbar)
+
+xcore_config_title_delimeter = Trenner für Title-Tag
+xcore_config_url_ending = Url Endung
+xcore_config_css_dir = CSS Verzeichnis
+xcore_config_js_dir = JS Verzeichnis
+xcore_config_image_dir = Image Verzeichnis
+xcore_config_favicon_dir = Favicon Verzeichnis
+xcore_config_offline_404_mode = 404 Ofline Modus (Offline Artikel sind nicht mehr erreichbar wenn nicht eingeloggt)
+xcore_config_show_meta_frontend_link = Frontend Link im REDAXO Metamenu rechts oben anzeigen
+xcore_config_smart_redirects = Smart Redirects (Url Endungen werden automatisch korrigiert und weitergeleitet)
+xcore_config_xcore_styles = Extra X-Core Styles (entfernt z.B. das Grün aus dem Backend ;))
+xcore_config_allow_downloads = Medienpool Downloads erlauben (z.B. über rexx::getDownloadFile() Urls)
+xcore_config_saved = Einstellungen gespeichert.
+xcore_config_save = Einstellungen speichern
+
+xcore_addon_installed = Bitte führen Sie als nächstes dass <a href="index.php?page=xcore/setup">X-Core Setup</a> aus.
+xcore_goto_website = zur Website
+xcore_api_docs_title = X-Core API
+xcore_api_docs_description = Die API der rexx Klasse aus dem X-Core AddOn
+
+xcore_module_input = Eingabe
+xcore_module_output = Ausgabe

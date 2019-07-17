@@ -1,0 +1,118 @@
+# DEFAULT CHARSET
+AddDefaultCharset utf-8
+
+# PREVENT DIRECTORY LISTING
+<IfModule mod_autoindex.c>
+	Options -Indexes
+</IfModule>
+
+# ADD MIME TYPES
+<IfModule mod_mime.c>
+	AddType image/x-icon ico
+	AddType image/svg+xml svg
+	AddType video/ogg ogv
+	AddType video/mp4 mp4
+	AddType video/webm webm
+	AddType video/x-flv flv
+	AddType audio/mpeg mp3
+	AddType audio/ogg ogg
+	AddType application/javascript js
+	AddType application/json json
+	AddType application/xml xml
+	AddType application/x-shockwave-flash swf
+	AddType application/vnd.ms-fontobject eot
+	AddType application/x-font-ttf ttf
+	AddType application/font-woff woff
+	AddType application/font-woff2 woff2
+	AddType font/opentype otf
+</IfModule>
+
+# COMPRESS FILES
+<IfModule mod_deflate.c>
+	AddOutputFilterByType DEFLATE text/html
+	AddOutputFilterByType DEFLATE text/plain
+	AddOutputFilterByType DEFLATE text/xml
+	AddOutputFilterByType DEFLATE text/css
+	AddOutputFilterByType DEFLATE image/svg+xml
+	AddOutputFilterByType DEFLATE application/javascript
+	AddOutputFilterByType DEFLATE application/json
+	AddOutputFilterByType DEFLATE application/xml
+	AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+	AddOutputFilterByType DEFLATE application/x-font-ttf
+	AddOutputFilterByType DEFLATE font/opentype
+</IfModule>
+
+# ADD CACHING HEADERS
+<IfModule mod_expires.c>
+	ExpiresActive On
+	ExpiresDefault "access plus 1 week"
+	ExpiresByType text/html "access plus 0 seconds"
+	ExpiresByType text/plain "access plus 0 seconds"
+	ExpiresByType text/xml "access plus 0 seconds"
+	ExpiresByType text/css "access plus 4 weeks"
+	ExpiresByType image/gif "access plus 1 week"
+	ExpiresByType image/png "access plus 1 week"
+	ExpiresByType image/jpg "access plus 1 week"
+	ExpiresByType image/jpeg "access plus 1 week"
+	ExpiresByType image/x-icon "access plus 4 week"
+	ExpiresByType image/svg+xml "access plus 4 weeks"
+	ExpiresByType video/mp4 "access plus 4 weeks"
+	ExpiresByType video/ogg "access plus 4 weeks"
+	ExpiresByType video/webm "access plus 4 weeks"
+	ExpiresByType video/x-flv "access plus 4 weeks"
+	ExpiresByType application/javascript "access plus 4 weeks"
+	ExpiresByType application/json "access plus 0 seconds"
+	ExpiresByType application/xml "access plus 0 seconds"
+	ExpiresByType application/x-shockwave-flash "access plus 4 weeks"
+	ExpiresByType application/vnd.ms-fontobject "access plus 4 weeks"
+	ExpiresByType application/x-font-ttf "access plus 4 weeks"
+	ExpiresByType application/font-woff "access plus 4 weeks"
+	ExpiresByType application/font-woff2 "access plus 4 weeks"
+	ExpiresByType font/opentype "access plus 4 weeks"
+</IfModule>
+
+# REMOVE ETAG
+<IfModule mod_headers.c>
+	Header unset ETag 
+</IfModule>
+
+FileETag None
+
+# REWRITING
+<IfModule mod_rewrite.c>
+	# ENABLE REWRITING
+	RewriteEngine On
+
+	# SET REWRITEBASE
+	RewriteCond %{REQUEST_URI}::$1 ^(/.+)/(.*)::\2$
+	RewriteRule ^(.*) - [E=BASE:%1]
+
+	# REDIRECT SITEMAP.XML TO SITEMAP FUNCTION
+	RewriteRule ^sitemap\.xml$ %{ENV:BASE}/index.php?rex_yrewrite_func=sitemap [NC,L]
+
+	# REDIRECT ROBOTS.TXT TO ROBOTS FUNCTION
+	RewriteRule ^robots\.txt$ %{ENV:BASE}/index.php?rex_yrewrite_func=robots [NC,L]
+
+	# REWRITE RULE FOR SEO FRIENDLY DOWNLOAD URLS
+	RewriteRule ^download[s]?/([^/]*) %{ENV:BASE}/index.php?rexx_func=download&rexx_file=$1 [NC,L]
+
+	# REWRITE RULE FOR SEO FRIENDLY IMAGE MANAGER URLS
+	RewriteRule ^mediatypes/([^/]*)/([^/]*) %{ENV:BASE}/index.php?rex_media_type=$1&rex_media_file=$2
+
+	# REWRITE RULE FOR JS/CSS VERSIONING
+	RewriteRule ^(.*)\.\d{10}\.(css|js)$ %{ENV:BASE}/$1.$2 [L]
+
+	# DON'T REWRITE IF REAL FILE, FOLDER OR SYMLINK EXISTS
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !-l
+
+	# EXCLUDE SPECIFIC FOLDERS FROM REWRITE ENGINE
+	RewriteCond %{REQUEST_URI} !^redaxo/.*
+	RewriteCond %{REQUEST_URI} !^media/.*
+	RewriteCond %{REQUEST_URI} !^assets/.*
+	RewriteCond %{REQUEST_URI} !^resources/.*
+
+	# REWRITE ALL OTHER REQUESTS TO INDEX.PHP
+	RewriteRule ^(.*)$ %{ENV:BASE}/index.php?%{QUERY_STRING} [L]
+</IfModule>

@@ -1,0 +1,144 @@
+
+/* ------------------------------------------------------------------------- */
+
+#rex-page-xcore-main #logo {
+	text-align: center;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+#rex-page-xcore-main #logo img {
+	display: inline-block;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#rexx-setup pre {
+	height: 250px;
+}
+
+
+.rexx-code {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.rexx-code pre {
+	overflow-wrap: normal;
+	word-break: keep-all;
+}
+
+.rexx-code code {
+	background-color: transparent;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.rexx-pretty-var-box {
+	border: 1px solid #aaa; 
+	margin: 0; 
+	padding: 7px;
+}
+
+.rexx-pretty-var-box i {
+	font-size: 17px;
+	margin-right: 3px;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.rex-slice [data-rexx-panel] {
+	display: none;
+}
+
+/* ------------------------------------------------------------------------- */
+
+.rexx-markdown h3 {
+	margin-bottom: 20px;
+}
+
+.rexx-markdown table 	{
+	border: 1px solid #cbcbcb;
+	margin: 0 0 20px 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+    empty-cells: show;
+	width: 100%;
+}
+
+.rexx-markdown table thead {
+    color: #000;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.rexx-markdown table tr:nth-child(even) { 
+	background-color: rgba(224, 224, 224, 0.4);
+}
+
+.rexx-markdown table tr:nth-child(odd) { 
+	background-color: #fff;
+}
+
+.rexx-markdown table th,
+.rexx-markdown table thead td {
+	font-weight: bold;
+	background-color: #fff;
+}
+
+.rexx-markdown table td, 
+.rexx-markdown table th {
+	padding: 12px;
+	text-align: left;
+	vertical-align: top;
+	border-bottom: 1px solid #cbcbcb;
+	border-right: 1px solid #cbcbcb;
+}
+
+.rexx-markdown table td p {
+	margin: 0;
+}
+
+.rexx-markdown .table-container {
+	width: 100%;
+	overflow-x: auto;
+	margin: 10px 0 20px 0;
+	background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #ffffff), color-stop(100%, rgba(255, 255, 255, 0))), -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #c3c3c5), color-stop(100%, rgba(195, 195, 197, 0))), -webkit-gradient(linear, 100% 50%, 0% 50%, color-stop(0%, #c3c3c5), color-stop(100%, rgba(195, 195, 197, 0)));
+	background-image: -webkit-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), -webkit-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), -webkit-linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), -webkit-linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-image: -moz-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), -moz-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), -moz-linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), -moz-linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-image: -o-linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), -o-linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), -o-linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), -o-linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-image: linear-gradient(left, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(right, #ffffff, rgba(255, 255, 255, 0)), linear-gradient(left, #c3c3c5, rgba(195, 195, 197, 0)), linear-gradient(right, #c3c3c5, rgba(195, 195, 197, 0));
+	background-position: 0 0, 100% 0, 0 0, 100% 0;
+	background-repeat: no-repeat;
+	background-color: white;
+	background-size: 4em 100%, 4em 100%, 1em 100%, 1em 100%;
+	background-attachment: local, local, scroll, scroll; 
+}
+
+/* ------------------------------------------------------------------------- */
+
+/* anti flicker logo */
+.navbar-brand > img.rex-redaxo-logo {
+	display: inline-block;
+}
+
+/* ------------------------------------------------------------------------- */
+
+#yform-yrewrite-seo-yrewrite_title input::-webkit-input-placeholder { /* WebKit browsers */
+	color: transparent;
+}
+
+#yform-yrewrite-seo-yrewrite_title input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: transparent;
+}
+
+#yform-yrewrite-seo-yrewrite_title input::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: transparent;
+}
+
+#yform-yrewrite-seo-yrewrite_title input:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color: transparent;
+}
+
+/* ------------------------------------------------------------------------- */
+

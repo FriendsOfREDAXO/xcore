@@ -1,0 +1,73 @@
+#rexx-form {
+	margin: 0 0 20px 0;
+	padding: 10px 0 20px 0;
+}
+
+#rexx-form form {
+	position: relative;
+}
+
+#rexx-form label {
+	display: none;
+}
+
+#rexx-form .control {
+	overflow: hidden;
+	margin: 5px 0;
+}
+
+#rexx-form .control.robotron {
+   position: absolute !important;
+   top: -9999px !important;
+   left: -9999px !important;
+}
+
+#rexx-form .control.textfield input,
+#rexx-form .control.textarea textarea {
+    color: #000;
+    background: #EDEDEE;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    border: 1px solid #EDEDEE;
+    padding: 12px 8px;
+    margin: 0;
+	width: 100%;
+    float: left;
+}
+
+#rexx-form .control.textarea textarea {
+	height: 200px;
+}
+
+#rexx-form .control.submit-button button {
+	color: #fff;
+	background: #A9A9A9;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	text-decoration: none !important;
+	text-transform: uppercase;
+	display: inline-block;
+	margin-top: 10px 0 0 0;
+	padding: 12px 12px;
+	cursor: pointer;
+	border: 0;
+}
+
+#rexx-form .control.validate-alert.textfield input, 
+#rexx-form .control.validate-alert.textarea textarea {
+	 border: 1px solid #FF0000;
+}
+
+#rexx-form .validate-alert-text {
+	color: #FF0000;
+}
+
+#rexx-form p {
+	margin: 10px 0;
+}
+
+#rexx-form p.required-msg {
+	text-align: right;
+	font-size: 16px;
+}

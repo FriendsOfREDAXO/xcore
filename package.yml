@@ -1,0 +1,32 @@
+package: xcore
+version: '1.1.3'
+author: RexDude
+supportpage: http://www.redaxo.org/de/forum/
+load: early
+page:
+    title: 'translate:title'
+    perm: admin[]
+    pjax: false
+    icon: rex-icon fa-times-circle
+    subpages:
+        main: { title: 'translate:main' }
+        rexx_api: { title: 'translate:rexx_api' }
+        code_snippets: 
+            title: 'translate:code_snippets'
+            subpages:
+                boilerplate: { title: 'translate:code_snippets_boilerplate' }
+                resource_includer: { title: 'translate:code_snippets_resource_includer' }
+                frontend_form: { title: 'translate:code_snippets_frontend_form' }
+                multi_slice: { title: 'translate:code_snippets_multi_slice' }
+        config: { title: 'translate:config' }
+        setup: { title: 'translate:setup' }
+        help:
+            title: 'translate:help'
+            subpages:
+                readme: { title: 'translate:help_readme' }
+                changelog: { title: 'translate:help_changelog' }
+                license: { title: 'translate:help_license' }
+requires:
+    redaxo: '^5.0'
+    packages:
+        yrewrite: '^2.0'
