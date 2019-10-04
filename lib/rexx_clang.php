@@ -122,6 +122,16 @@ class rexx_clang {
 			'special_chars' => ['À', 'à', 'á', 'ã', 'ç', 'È', 'è', 'É', 'é', 'Ì', 'ì', 'Í', 'í', 'Ï', 'ï', 'Ò', 'ò', 'Ó', 'ó', 'Ù', 'ù', 'Ú', 'ú', '&'],
 			'special_chars_rewrite' => ['A', 'a', 'a', 'a', 'c', 'E', 'e', 'E', 'e', 'I', 'i', 'I', 'i', 'I', 'i', 'O', 'o', 'O', 'o', 'U', 'u', 'U', 'u', 'e']
 		],
+		'si' => [
+			'original_name' => 'slovenščina',
+			'code' => 'si',
+			'region_code' => 'si-SI',
+			'url_slug' => 'si',
+			'hreflang' => 'si',
+			'dir' => 'ltr',
+			'special_chars' => ['À', 'à', 'Č', 'č', 'ć', 'È', 'è', 'É', 'é', 'Ì', 'ì', 'Í', 'í', 'Ï', 'ï', 'Ł', 'ł', 'Ò', 'ò', 'Ó', 'ó', 'Ù', 'ù', 'Ú', 'ú', 'ź', 'ż', 'ž', '&'],
+			'special_chars_rewrite' => ['A', 'a', 'C', 'c', 'c', 'E', 'e', 'E', 'e', 'I', 'i', 'I', 'i', 'I', 'i', 'L', 'l', 'O', 'o', 'O', 'o', 'U', 'u', 'U', 'u', 'z', 'z', 'z', 'in']
+		],
 		'sv' => [
 			'original_name' => 'svensk',
 			'code' => 'sv',
