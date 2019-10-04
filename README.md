@@ -3,8 +3,12 @@ X-Core für REDAXO 5
 
 SEO Verbesserungen, Url Manipulation, Tweaks, Code Snippets Sammlung, Extra Stuff und die rexx API. Nachfolger von SEO42.
 
-Features
---------
+## Ersatz für SEO42 nach Migration 
+
+X-Core ist nach Konvertierungen von REDAXO 4.x zu 5.x, ein nützliches Hilfs-AddOn. Hier müssen die seo42:: - Aufrufe durch rexx:: Aufrufe sowie seo42::getImageMediaFiledurch rexx::getManagedMediaFile ersetzt werden.
+
+
+## Features
 
 * Sauber eingestelltes Caching sowie Komprimierung für Resourcen wie Bildern, Fonts, CSS und JS Dateien (.htaccess)
 * Verschiedene URL-Endungen einstellbar (z.B. Endung `.html` oder `/`)
@@ -28,8 +32,7 @@ Features
 * Klasse `rexx_simple_html_dom`: Wrapper für die mitgelieferte Simple Html Dom Bibliothek zum einfachen manipulieren des HTML Doms per PHP
 * PHP Custom Frontend Form ohne yForm, Multi Slice Module und weitere Code Snippets
 
-Verfügbare Sprachumschreibungen
--------------------------------
+## Verfügbare Sprachumschreibungen
 
 Die Urls werden mittels dieser LangPresets automatisch sauber umgeschrieben wenn die Codes der Sprachen unter REDAXO > System > Sprachen korrekt eingegeben wurden.
 
@@ -45,27 +48,24 @@ Die Urls werden mittels dieser LangPresets automatisch sauber umgeschrieben wenn
 * norsk (no)
 * polska (pl)
 * português (pt)
+* slovenščina (si)
 * svensk (sv)
 * türk (tr)
 
-500 Serverfehler
-----------------
+## 500 Serverfehler
 
 Wenn Sie einen 500 Serverfehler bekommen entfernen Sie die Zeile `Options -Indexes` aus der `.htaccess` Datei im root Verzeichnis.
 
 
-Fehlerartikel
--------------
+## Fehlerartikel
 
 Stellen Sie einen Fehlerartikel ein. Sonst liefert X-Core eine eigene 404 Seite aus um Double Content Probleme zu vermeiden.
 
-Unterordner-Installationen
---------------------------
+## Unterordner-Installationen
 
 Unter REDAXO > System ist es wichtig den Unterordner bei der URL der Website mit anzugeben. Wenn Sie unter yRewrite > Domains eine Domain/Url eingestellt haben sollte diese ebenfalls mit Unterordner angegeben werden.
 
-Dokumentation
--------------
+## Dokumentation
 
 * [rexx API](docs/rexx_api.md)
 * [Less.php](http://lessphp.typesettercms.com/)
@@ -73,24 +73,20 @@ Dokumentation
 * [Simple Html Dom](http://simplehtmldom.sourceforge.net/)
 * [Parsedown](https://github.com/erusev/parsedown/wiki)
 
-Hinweise
---------
+## Hinweise
 
 * Getestet mit REDAXO 5.3
 * AddOn-Ordner lautet: `xcore`
 * Abhängigkeiten: yRewrite
 
-Changelog
----------
+## Changelog
 
 siehe `CHANGELOG.md` des AddOns
 
-Lizenz
-------
+## Lizenz
 
 MIT-Lizenz, siehe `LICENSE.md` des AddOns
 
-Credits
--------
+## Credits
 
 * PHP-Markdown-Documentation-Generator, itsliamjones (threeWayComparison()), Public Domain Logo, More to come...
