@@ -26,22 +26,22 @@ if (!$this->hasConfig('favicon_dir')) {
 }
 
 if (!$this->hasConfig('offline_404_mode')) {
-    $this->setConfig('offline_404_mode', 1);
+    $this->setConfig('offline_404_mode', 0);
 }
 
 if (!$this->hasConfig('smart_redirects')) {
-    $this->setConfig('smart_redirects', 1);
+    $this->setConfig('smart_redirects', 0);
 }
 
 if (!$this->hasConfig('xcore_styles')) {
-    $this->setConfig('xcore_styles', 1);
+    $this->setConfig('xcore_styles', 0);
 }
 
 if (!$this->hasConfig('show_meta_frontend_link')) {
-    $this->setConfig('show_meta_frontend_link', 1);
+    $this->setConfig('show_meta_frontend_link', 0);
 }
 
 if (!$this->hasConfig('allow_downloads')) {
-    $this->setConfig('allow_downloads', 1);
+    $this->setConfig('allow_downloads', 0);
 }
 
