@@ -1,6 +1,12 @@
 X-Core - Changelog
 ==================
 
+### Version 1.1.4 - 13. November 2019
+
+* htaccess an aktuelle Regeln von YForm angepasst
+* Slowenisches Sprachschema hinzugefügt
+
+
 ### Version 1.1.3 - 09. Juni 2018
 
 * `rexx_markdown` Klasse aktualisiert und REDAXO 5.6 compat hergestellt
