@@ -5,6 +5,7 @@ X-Core - Changelog
 
 * htaccess an aktuelle Regeln von YForm angepasst
 * Slowenisches Sprachschema hinzugefügt
+* Optionale Features per default deaktiviert
 
 
 ### Version 1.1.3 - 09. Juni 2018
