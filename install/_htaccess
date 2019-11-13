@@ -98,6 +98,10 @@ FileETag None
 
 	# REWRITE RULE FOR SEO FRIENDLY IMAGE MANAGER URLS
 	RewriteRule ^mediatypes/([^/]*)/([^/]*) %{ENV:BASE}/index.php?rex_media_type=$1&rex_media_file=$2
+	
+	# YForm Media Rewrite Rules
+	RewriteRule ^media/([^/]+)/(.*) %{ENV:BASE}/index.php?rex_media_type=$1&rex_media_file=$2&%{QUERY_STRING} [B]
+        RewriteRule ^media/(.*) %{ENV:BASE}/index.php?rex_media_type=default&rex_media_file=$1&%{QUERY_STRING} [B]
 
 	# REWRITE RULE FOR JS/CSS VERSIONING
 	RewriteRule ^(.*)\.\d{10}\.(css|js)$ %{ENV:BASE}/$1.$2 [L]
