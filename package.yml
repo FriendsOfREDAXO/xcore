@@ -1,8 +1,9 @@
 package: xcore
 version: '1.1.4'
-author: RexDude
-supportpage: http://www.redaxo.org/de/forum/
+author: Friends Of REDAXO
+supportpage: https://github.com/FriendsOfREDAXO/xcore
 load: early
+
 page:
     title: 'translate:title'
     perm: admin[]
@@ -26,6 +27,7 @@ page:
                 readme: { title: 'translate:help_readme' }
                 changelog: { title: 'translate:help_changelog' }
                 license: { title: 'translate:help_license' }
+
 requires:
     redaxo: '^5.0'
     packages:
