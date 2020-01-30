@@ -89,4 +89,5 @@ MIT-Lizenz, siehe `LICENSE.md` des AddOns
 
 ## Credits
 
+* Entwickelt vom RexDude
 * PHP-Markdown-Documentation-Generator, itsliamjones (threeWayComparison()), Public Domain Logo, More to come...
