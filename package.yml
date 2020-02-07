@@ -1,5 +1,5 @@
 package: xcore
-version: '1.1.4'
+version: '1.1.5-dev'
 author: Friends Of REDAXO
 supportpage: https://github.com/FriendsOfREDAXO/xcore
 load: early
@@ -30,5 +30,7 @@ page:
 
 requires:
     redaxo: '^5.0'
+    php:
+    version: '^5.6'
     packages:
         yrewrite: '^2.0'
