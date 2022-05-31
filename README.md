@@ -1,5 +1,6 @@
-X-Core für REDAXO 5
-===================
+# X-Core für REDAXO 5
+
+> **Hinweis:** Deprecated / Entwicklung eingestellt. Alternativen gibt es durch YRewrite, Access Denied und begleitende Addons.
 
 SEO Verbesserungen, Url Manipulation, Tweaks, Code Snippets Sammlung, Extra Stuff und die rexx API. Nachfolger von SEO42.
 
